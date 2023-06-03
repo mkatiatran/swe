@@ -1,0 +1,28 @@
+git init - creates a new git repository
+git clone - creates a working copy of a repository
+  - LOCAL, use git clone /path/to/repository
+  - on a remote server, clone to local device, use git clone username@host:/path/to/repository
+
+local repository consists of three trees
+working directory - holds actual files
+index - staging area
+head - points to the last commit you've made
+
+git add <filename> adds a file to the index
+git commit -m "message" commits file to the head, but the file is not in the remote repository
+git push origin master/branch name - sends changes to the remote repository
+
+git checkout -b branch_name - creates a new branch named branch_name and switches to it
+git checkout master - switches back to masater
+git branch -d branch_name - deletes branch_name
+git push origin branch_name - pushes branch to remote repo
+
+git pull - updates local repo to newest commit
+git merge branch_name - merges another branch into your active branch
+git diff source_branch_name target_branch_name - shows difference between the two branches
+
+git log - shows repo history
+git log --name-status - shows you which files have changed
+git checkout -- file_name - this replaces the changes in your current tree with the last content in head
+
+git reset --hard origin/master - drops all local changes and commits, fetches latest history from server and points local master branch to it
