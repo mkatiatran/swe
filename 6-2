@@ -1,0 +1,55 @@
+3 ways to execute a file Hello.py on shell w/o execute permissions:
+python Hello.py
+
+python
+import Hello
+
+python3 ./Hello.py
+
+
+
+
+*******************
+-rwxrwxrwx
+first letter is for the type of file
+then it's user, group, others
+
+
+
+
+if a file is an executable, you can just run this on the shell:
+Hello.py
+
+OR
+
+python3 -m cProfile Hello.py
+*cProfile is an optimization module that shows you the time spent per function
+
+
+
+range(10)
+  - range is an iterator that returns an object that egnerates the value on demand
+  
+  
+  
+// is integer division
+
+
+
+
+
+pre conditions check if input is valid, post condition asserts check that output is valid
+
+
+
+
+
+python3 -O file_name turns off the assertions using the O flag
+
+
+
+
+
+.gitignore = files that you don't want to upload to repo
+any files starting with the . are invisible
+.gitlab-ci is the file that builds the project in the cloud
