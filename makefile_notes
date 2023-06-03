@@ -1,0 +1,45 @@
+the make utility = an automation tool that uses a makefile (file containing set of tasks to execute)
+  - helps with grouping commands together
+  - don't have to retype file names
+
+makefile format
+target: dependencies:source 
+  action
+** NOTE that actions need tabs before them **
+** targets are flushed left **
+** multiple targets are just separated by a space, same with multiple source targets **
+
+what is the target? 
+  - can be the name of the action to carry out, e.g. clean
+  - can be the name of a file that the program generates
+what is the dependency?
+  - the necessary files that the target needs to be created
+  
+what happens if i run make without specifying the target?
+  - the first target will be used
+  - you can specify the default target (if you want it to not be the first target when you run 'make' by placing the following at the beginning of the makefile:
+    .DEFAULT_GOAL := DESIRED_TARGET_HERE
+
+example to create a makefile: 
+consider the python file Avg.py below:
+def avg(marks):
+  assert len(marks) != 0
+  return sum(marks)/len(marks)
+print("The average of 1, 2, and 3 is", avg([1,2,3]))
+
+consider the makefile:
+Output.txt: 
+  @echo "Creating Output.txt"
+  python Avg.py > Output.txt
+
+in a shell (on Mac, shell == terminal) if you run make Output.txt, it makes that target
+
+* if you run make on a target but its dependencies didn't change and there already exists a file with that target name, it will not run again
+* to fix this, run:
+.PHONY: Output.txt
+Output.txt:
+  @echo "creating Output.txt"
+  python Avg.py > Output.txt
+  
+anytime you update something in the dependency file, the target will be remade
+target is also remade if missing, or older than the dependency file
