@@ -18,7 +18,7 @@ then it's user, group, others
 
 
 if a file is an executable, you can just run this on the shell:
-Hello.py
+./Hello.py
 
 OR
 
