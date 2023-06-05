@@ -8,7 +8,6 @@ python3 ./Hello.py
 
 
 
-
 *******************
 -rwxrwxrwx
 first letter is for the type of file
@@ -16,12 +15,9 @@ then it's user, group, others
 
 
 
-
 if a file is an executable, you can just run this on the shell:
 ./Hello.py
-
 OR
-
 python3 -m cProfile Hello.py
 *cProfile is an optimization module that shows you the time spent per function
 
@@ -36,11 +32,7 @@ range(10)
 
 
 
-
-
 pre conditions check if input is valid, post condition asserts check that output is valid
-
-
 
 
 
@@ -48,8 +40,8 @@ python3 -O file_name turns off the assertions using the O flag
 
 
 
-
 collatz conjecture
+where input is a positive integer
 even number, // 2
 odd number, *3 and then add one
 
