@@ -29,10 +29,10 @@ main is not a function, it's an instance of TestProgram class in unittest that r
 main() is instantiating an object of TestProgram class
 
 
-a python file is called a script
-if you import a file, this is false
 if __name__ == "__main__"
-if not imported, this is true
+a python file is called a script
+if you import a file, what's under this will not run
+if the file is not imported, this is true and the code beneath it runs
 in this case, __name__ = UnitTests3.py
 
 
@@ -45,7 +45,7 @@ $ coverage help run
 $ coverage help report
 how to run
 $ coverage run --branch Coverage1.py
-  --branch activates branch coverage
+  --branch activates branch coverage (this is all decision statements, like if/else)
     if you want coverage to also tell you about if/else statements then activate --branch flag
 $ coverage report -m
   14->15 shows a branch, e.g. if a loop was true or not
@@ -53,3 +53,20 @@ $ coverage report -m
   
 #pragma : no cover
 ^ this indicates to coverage to ignore the if statement above it
+
+
+
+
+
+When you run your script, the __name__ variable equals __main__. When you import the containing script, it will contain the name of the script.
+
+
+
+kernel
+Collatz.py
+
+run harness
+RunCollatz.py
+
+test harness
+TestCollatz.py
