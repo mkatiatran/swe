@@ -1,0 +1,55 @@
+a UNIT is a function in code
+unit tests, test the accuracy
+
+from unittest import main, TestCase
+
+
+this class is derived from TestCase
+class MyUnitTests(TestCase) :
+
+define functions that are diferent tests 
+they MUST start with "test"
+
+def test...
+
+if __name__ == "__main__" :
+  main()
+  
+  
+  
+four things needed for testcases
+import main and testcase
+define a class that is derived from testcase
+define as many unittests as you want as functions, where the name of each starts with "test"
+add the __name__ statement that does the running of the tests
+
+
+
+main is not a function, it's an instance of TestProgram class in unittest that runs all functions
+main() is instantiating an object of TestProgram class
+
+
+a python file is called a script
+if you import a file, this is false
+if __name__ == "__main__"
+if not imported, this is true
+in this case, __name__ = UnitTests3.py
+
+
+
+what is coverage for?
+measure the % of code that is covered by code
+
+
+$ coverage help run
+$ coverage help report
+how to run
+$ coverage run --branch Coverage1.py
+  --branch activates branch coverage
+    if you want coverage to also tell you about if/else statements then activate --branch flag
+$ coverage report -m
+  14->15 shows a branch, e.g. if a loop was true or not
+  aim for 100% coverage
+  
+#pragma : no cover
+^ this indicates to coverage to ignore the if statement above it
