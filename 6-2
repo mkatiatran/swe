@@ -49,6 +49,11 @@ python3 -O file_name turns off the assertions using the O flag
 
 
 
+collatz conjecture
+even number, // 2
+odd number, *3 and then add one
+
+
 
 .gitignore = files that you don't want to upload to repo
 any files starting with the . are invisible
