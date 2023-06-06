@@ -1,0 +1,6 @@
+if making a file, to add it back to main
+
+git checkout main - switches back to main brange
+git merge name-of-branch - merges other brange with main, you must resolve any conflicts if necessary
+git push origin main - pushes new changes to remote repo
+git branch -d name-of-branch - delete the branch if you will not use any more
