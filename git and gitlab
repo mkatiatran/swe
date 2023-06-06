@@ -4,3 +4,21 @@ git checkout main - switches back to main brange
 git merge name-of-branch - merges other brange with main, you must resolve any conflicts if necessary
 git push origin main - pushes new changes to remote repo
 git branch -d name-of-branch - delete the branch if you will not use any more
+
+
+
+merge conflicts:
+<<<<<<< HEAD
+def fun2():
+pass
+=======
+def fun1():
+pass
+>>>>>>>
+
+if you intend to keep both fun2 and fun1, delete the <<, ==, and >> which show the regions of the file with the conflict
+
+
+merge requests:
+from local to your copy on the cloud, you can push changes from a branch; then using gitlab, request merging the branch to main 
+you can also merge your forked copy to the original copy (after pushing locally)
