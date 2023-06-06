@@ -70,3 +70,13 @@ RunCollatz.py
 
 test harness
 TestCollatz.py
+
+
+
+stdin keyboard, stdout monitor
+
+
+python -m pydoc -w Collatz (name of kernel)
+generates the automatic documentation of all files
+
+
