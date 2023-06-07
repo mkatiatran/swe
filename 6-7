@@ -1,0 +1,104 @@
+unit tests
+  glass box testing or white box test
+  if one of the methods fails, you can pinpoint the problem/module/line of code
+  for use by developers
+acceptance test
+  black box testing
+  the user doesn't care about unit tests, they just want the program to work
+  submit input to the program and you get back output, say... out_1
+  compare if the expected out and out_1 are equal
+  
+to build a project
+  submit the input
+  run the unit tests
+  analyze the output
+  to do this, use the makefile
+  
+when you run make, the first thing it does is look for a makefile, throws error if not present
+  then go inside and looks for target AND no dependencies of that target has changed, the actions will execute
+  otw it will remake the target and execute the actions
+  
+FILES :=
+  x
+  x
+  x
+  
+sets a variable constant (?) for all the files you want to check
+
+
+$(PYDOC)
+  command substitution, invokes a subshell
+  the command in the braces of $() is executed in a subshell
+  the output is then placed in the original command
+
+.PHONY means to always update the Collatz.log target when run
+
+diff --strip-trailing-cr RunCollatz.tmp RunCollatz.out
+  shows where each file differs
+  the -strip-trailing means to strip the newline at the end
+  
+2>&1
+  whatever you're sending to stderr, send it to stdout instead
+
+stdin 0
+stdout 1
+stderr 2
+
+in coverage, coverage output is fwded to stderr
+the greater than sign in TestCollatz.py > TestCollatz.tmp doesn't work because output is going to stderr
+
+>>
+  appends, not overwrites, a file
+  
+  
+  
+gitlab-ci.yml
+  ci stands for continuous integration
+  triggers the remote build
+  
+why do we have a dev branch
+  the main is the deployed app, which is up and running
+  the dev branch is for experimentation
+  if the branch is good, you can reintegrate it
+
+cache
+  a data strcutre with pre-computed values, memoization
+brute force
+  using for loops to find every solution from start to end
+simple cache
+  dictionary
+lazy cache
+  values are computed upon request
+  maybe it starts with nothing
+  no values in advance
+eager cache
+  do things before you start
+  all values are available before you start
+meta cache
+  lazy + egaer
+  starts with some values, as you go you add to the cache
+
+
+
+for sphere challenge:
+create a type of eager cache
+find ranges and build an eager cache and build sizes
+say that the range is 1-1,000,000
+  1-1000 -> create array and find the max cycle length
+  1001-2000 -> find max cycle length for this interval
+  2001-3000, etc.
+
+you cache the ranges and then take the max of the results of those ranges
+
+
+what if range is 1500-4500
+lookup values 2001-3000, 3001-4000
+you can use these two ranges because it's within the intervals
+  however for the rest, you must compute from 1500-2001, and 4000-4500
+  
+write a script to generate the intervals
+and then check the intervals
+check lookup values, check computed values, and take max
+uses ARRAY over dictionary
+
+  
