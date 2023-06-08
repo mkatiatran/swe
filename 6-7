@@ -101,4 +101,9 @@ and then check the intervals
 check lookup values, check computed values, and take max
 uses ARRAY over dictionary
 
+
+git push origin main 
+  origin is the remote counterpart of the project
+  main is the branch name
+
   
