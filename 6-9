@@ -73,6 +73,33 @@ sets are mutable and unordered, duplicates are not allowed
 frozen set is immutable
 dictionary has key value pairs
 
+assert not good for unittests or catching user errors
+don't want to use assert in deployed code
+if you hit assert, code halts
+
+
+try: 
+  put the code that causes trouble
+  if things are okay, then go to else and finally after else
+  if things are not okay, go to except and finally
+  finally is always executed
+except: this catches any error
+  except exception as e:
+  this catches any exception
+else:
+finally: ..
+
+
+
+assert isinstance(e.args, tuple)
+e.args, the exception has arguments and it must be of type tuple
+
+assert e.args       is not ("abc",)
+cannot remove the comma or else it'll become a string
+keep comma to keep it in a tuple
+
+
+
 
 
 
