@@ -1,3 +1,82 @@
 cloning is copying a project for the first time, it can only happen once
 you cannot clone again to the same place
 
+when you write a program you start with the unittests first
+
+
+everything in python is an object
+123 is an instance of type int
+"abc" is an instance of type string
+
+string, int are classes
+
+all objects have to be instantiated
+
+in python, there are two categories at the top: TYPE, and OBJECT
+in java, only object is at the top
+
+
+notation              
+this is an object
+
+examples
+123, object only, pure object
+type
+object
+anything in python
+int, a class object
+str, a class object
+
+this is the type of A
+^
+|
+this is object A
+
+int
+^
+|
+123
+
+this is the super class of C
+^
+|
+this is class C
+
+
+Foo
+^
+|
+Bar
+this means bar is a subclass of Foo
+
+
+
+
+object
+^
+|| (dashed line)
+Foo ---> type
+
+two pointers from Foo, one to superclass and one to type
+type(Foo) gives you the type
+__base__ will tell you the superclass
+
+
+
+
+type is going to tell you what class something was instantiated from
+
+
+lists are mutable, you can change the data structure wo generating a new one
+tuples are immutable, any attempt to change you create a new object
+sets are mutable and unordered, duplicates are not allowed
+frozen set is immutable
+dictionary has key value pairs
+
+
+
+
+
+** to consider for project 1
+1, 1
+1, 10 and 10, 1
