@@ -1,0 +1,8 @@
+using assertions is not good for testing, failure of one stops execution of whole program
+
+AvgTest.tmp: Avg.py AvgTest.py
+  # pipe results into a file named AvgTest.tmp
+  coverage run --branch AvgTest.py > AvgTest.tmp 2>&1
+  # show report
+  coverage report -m >> AvgTest.tmp
+  cat AvgTest.tmp
