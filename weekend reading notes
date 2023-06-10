@@ -1,0 +1,61 @@
+integration verified by automated build to detect integration errors asap
+integration is a long, unpredictable process
+it can be quick when you integrate daily against a controlled source repository
+
+best continuous integration server is cruisecontrol
+
+steps:
+check out a working copy
+alter the code as you see vit
+build on local machine, make sure it's good
+update local copy to remote changes
+  if error, fix and repeat
+commit to mainline
+build code remotely
+when it succeeds, you are done
+
+result: stable software that works, has few bugs
+
+repositories
+  put all files in there
+  keep branches to a minimum
+  don't keep the products of the build in the repository
+
+automate the build
+  a good build tool checks dates of the source/object files, only compiles if the
+  source date is later
+  
+make the code self-testing
+  use automated tests that can be run from a single command
+  for a build to be self-testing, failure of 1 test causes build to fail
+
+commit to the mainline daily
+  conflicts can be found easily
+  
+build the mainline on an integration machine
+  don't go home until mainline builds with any commits you've added
+  can do this manually or using a CI server
+  manually, go to the integration machine and execute the integration build
+  CI monitors the repository, every commit the server initiates a build and notifies 
+  the person who submitted it of the result
+
+fix the build immediately
+
+deployment pipeline
+  there are multiple builds done in sequence
+  first commit triggers the first build/commit build, is done quickly
+  
+a two-stage deployment pipeline
+  do the compilation, run tests with database stubbed out, this will run very fast, < 10 min
+  then, run the build with a range of dif tests that do hit the real database, may take a couple hours
+  if the second stage fails this does not have the same "stop everyone" quality
+  
+test in a clone of the production environment
+  fush out any problem the system will have in production
+  use the same database software, same OS version
+  use a virtual machine
+
+easy access for anyone to get the latest executable
+  
+biggest benefit
+  reduced risk
