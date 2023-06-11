@@ -1,0 +1,15 @@
+user story
+  customers have the right to get the most value out of programming by asking
+  for small bits of functionality; programmers have the right to know what's needed
+  a user story is the description of the behavior of the system, from POV of 
+  system user
+
+a story should encompass a week or two of programmer time
+a programmer should have at least 1-2 stories per month
+
+guru checks output
+  check the output of a program just by reading it
+  
+a spike story
+  just estimate or do a sketch mini problem of the whole big thing you're
+  trying to tackle so you can get an estimate for the amt of time it will take
