@@ -39,7 +39,6 @@ is, are a and b pointing to the same object?
 
 
 
-
 with self.subTest()
   keeps going in a for loop of functions in unittest if one fails
   
@@ -49,3 +48,53 @@ t = timeit(
   f.__name__ + "(100)",     as if you're going to run the function with the parameter (100)
   number = 1000)            run the process a thousand times so we have a significant number after execution
   *1000                     go from microseconds to milliseconds
+
+
+
+tail recursion
+  function within a function
+  pass the results of one recursive step to the next
+  reuses the same frame, so reduces stacking frames
+  
+factorial while/range for
+  does factorial with while and for loops
+  
+range reduce
+  calls reduce function is a higher order function, meaning it receives another function as an input
+  applies function in a sequence at a seed
+  reduce(mul, (2, 3, 4), 1)
+    operator, sequence, and seed
+  starts at 1 mul 2 = 2
+  2 mul 3 = 6
+  6 mul 4 = 24
+
+
+binary function
+  takes in two inputs
+  
+a = {1, 2, 3}
+  this is a set and is unordered and is therefore unindexable
+  
+reduce_for without the in range 
+  you use 
+  1. for w in a
+  2. rather than for w in range(len(a))
+  the former option does not require an indexable data structure
+  the second option does
+  
+
+reduce_while
+  p = iter(a), iter takes in an iterable object and returns an iterator of that
+  what are iterables in python? things that you iterate through, ex a list
+  iterables include generators (functions) or iterators (class)
+    generating values on demand
+    they are not indexable
+    
+hasattr(x, "__iter__")
+  shows the attributes of a function
+  this function means, is x iterable? = True
+hasattr(x, "__next__")
+  is x iterator/generator?
+  False
+  
+  
