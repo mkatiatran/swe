@@ -20,3 +20,32 @@ lists are mutable objects and can store many types of objects
 
 you cannot change objects in tuples, bc it does not support item assignment
 
+b = (2, 3, 4)
+b = b + (9,)
+b
+(2, 3, 4, 9)
+id(b) will return a different num for the first line and after you add 9 because a new object is returned
+
+boolean operators: and, or, not (applied on truth values/boolean values)
+bitwise operators: >>, <<, ~, |, & (applied on integral values)
+
+2 * "abc" = "abcabc"
+
+== is for equality
+is, is for identity
+a == b, is a equal to b value wise?
+
+is, are a and b pointing to the same object?
+
+
+
+
+with self.subTest()
+  keeps going in a for loop of functions in unittest if one fails
+  
+
+
+t = timeit(
+  f.__name__ + "(100)",     as if you're going to run the function with the parameter (100)
+  number = 1000)            run the process a thousand times so we have a significant number after execution
+  *1000                     go from microseconds to milliseconds
