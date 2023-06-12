@@ -89,6 +89,11 @@ reduce_while
   iterables include generators (functions) or iterators (class)
     generating values on demand
     they are not indexable
+    iterators and generators are lazy, exhaustible
+      lazy because it only gets the next value ready, only 1 value available at a time
+  benefits: less memory
+  
+      
     
 hasattr(x, "__iter__")
   shows the attributes of a function
@@ -96,5 +101,36 @@ hasattr(x, "__iter__")
 hasattr(x, "__next__")
   is x iterator/generator?
   False
+hasattr(x, "__getitem__")
+  if an object is indexable
+
+y = iter(x)
+hasattr(x, "__iter__")
+  True
   
+  
+  
+iter means everything that is iterable
+an iterator is also an interable
+
+hasattr(y, "__iter__")
+  True
+hasattr(y, "__next__") 
+  True
+hasattr(y, "__getitem__")
+  False
+  it is not indexable
+  
+if x = [1,2,3]
+how can you get these values from y?
+  next(y)
+  will get 1
+  next(y)
+  will get 2
+  next(y)
+  will get 3
+    exhausted
+how to get all values?
+  list(y)
+  immediately exhausts it
   
