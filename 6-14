@@ -35,7 +35,7 @@ html page
     <img src="pic_trulli.jpg" alt="ItalianTrulli"> #has to be saved in same folder as index
     <a href = "http://www.google.com">Google</a> # anchor tag
     <a href="page1.html">Page 1</a>
-  <div>
+  </div>
   </body>
 </html> # closes html body
 <!--
@@ -58,6 +58,7 @@ in line level element because it only takes as much space as it needs
   
   
 HTML: elements that appear on the screen
+  input data from user
 CSS: cascading style sheets, the designer
   1. add styles directly in the head
   2. referring to an external document
@@ -78,3 +79,50 @@ relation, you explain the relation of that doc to this doc
 
 if you want styling for a specific div
 
+
+
+
+
+
+HTML form
+<!DOCTYPE html>
+  <head>
+  </head>
+  <body>
+    <form action="results.html" method="GET">
+      <div>
+      Name: <input>
+      </div>
+      <div>
+      Password: <input>
+      </div>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
+
+
+buttons by default are 
+  <button type="submit">Submit</button>
+GET and POST are the two types of actions
+  GET sends information to the server
+  POST retrieves data from the server
+  
+  
+  
+  
+
+JAVASCRIPT CODE
+  it can be in the body or in the head
+  usually put in the body's end, so if there is any delay in running the code
+  the website is rendered first
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <script>
+      document.write(window.location.search)
+    </script>
+  </body>
+</html>
