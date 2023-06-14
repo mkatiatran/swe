@@ -39,3 +39,8 @@ save text as index.html
 block level elements that always start on a newline and take up the full width available
 in line level element because it only takes as much space as it needs
   next element will continue after it
+  
+  
+  
+HTML: elements that appear on the screen
+CSS: cascading style sheets, the designer
