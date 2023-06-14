@@ -1,0 +1,32 @@
+after exhausting an iterator, the error you get is
+  StopIterator
+  
+HTML, hypertext markup language
+  two basic things for a webpage
+    text editor
+    interet browser
+    (3) host your page, not just locally, accessible to many people
+    
+html is white space insensitive
+    
+html page
+<!DOCTYPE html>
+<html> # html tag
+  <head>
+  </head>
+  <body>
+    <h1>CS 373</h1>
+    <hr>
+    <p>This is a paragraph.</p>
+    <img src="pic_trulli.jpg" alt="ItalianTrulli"> #has to be saved in same folder as index
+    <a href = "http://www.google.com">Google</a> # anchor tag
+  </body>
+</html> # closes html body
+
+
+the body tag contains what's visible to the user
+the head tag contains things that don't necessarily appear to user
+  like character sets, keywords, scripts, style
+  
+save text as index.html
+  this is a common name for homepage
