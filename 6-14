@@ -16,7 +16,11 @@ html page
   <style>
     p {color: blue; font-family: arial;}
     #first1 {background-color: orange;} # pound used to style IDs
-    .first2 {border: 3px solid brown;} # . is used for IDs
+    .first2 {border: 3px solid brown; padding: 20px 50px 50px 20px;
+             margin: 50px 50px 50px 0px;} # . is used for IDs
+                                          # padding is between text and border
+                                          # margin is the area between the border and the outside world
+                                          # top right bottom left
   </style>
   </head>
   <body>
