@@ -13,14 +13,25 @@ html page
 <!DOCTYPE html>
 <html> # html tag
   <head>
+  <style>
+    p {color: blue; font-family: arial;}
+    #first1 {background-color: orange;} # pound used to style IDs
+    .first2 {border: 3px solid brown;} # . is used for IDs
+  </style>
   </head>
   <body>
+  <div id ="first1"> # groups things together, if you don't want it to be applied to
+                    # all divs when styling, use the id
+                    # you can also say <div class="first2">
+                    #
+  
     <h1>CS 373</h1>
     <hr>
     <p>This is a paragraph.</p>
     <img src="pic_trulli.jpg" alt="ItalianTrulli"> #has to be saved in same folder as index
     <a href = "http://www.google.com">Google</a> # anchor tag
     <a href="page1.html">Page 1</a>
+  <div>
   </body>
 </html> # closes html body
 <!--
@@ -44,3 +55,22 @@ in line level element because it only takes as much space as it needs
   
 HTML: elements that appear on the screen
 CSS: cascading style sheets, the designer
+  1. add styles directly in the head
+  2. referring to an external document
+to style an element
+  selector {property1: value1; property2: value2,...}
+  
+  
+style.css
+  don't need the style tag
+p {color: blue; font-family: arial;}
+
+back in index.html
+<head>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head
+
+relation, you explain the relation of that doc to this doc
+
+if you want styling for a specific div
+
