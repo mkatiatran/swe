@@ -20,8 +20,12 @@ html page
     <p>This is a paragraph.</p>
     <img src="pic_trulli.jpg" alt="ItalianTrulli"> #has to be saved in same folder as index
     <a href = "http://www.google.com">Google</a> # anchor tag
+    <a href="page1.html">Page 1</a>
   </body>
 </html> # closes html body
+<!--
+use this for a multiline comment
+-->
 
 
 the body tag contains what's visible to the user
@@ -30,3 +34,8 @@ the head tag contains things that don't necessarily appear to user
   
 save text as index.html
   this is a common name for homepage
+
+
+block level elements that always start on a newline and take up the full width available
+in line level element because it only takes as much space as it needs
+  next element will continue after it
