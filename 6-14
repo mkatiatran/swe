@@ -64,6 +64,8 @@ CSS: cascading style sheets, the designer
   2. referring to an external document
 to style an element
   selector {property1: value1; property2: value2,...}
+javascript
+  interactions
   
   
 style.css
@@ -91,10 +93,10 @@ HTML form
   <body>
     <form action="results.html" method="GET">
       <div>
-      Name: <input>
+      Name: <input name="name">
       </div>
       <div>
-      Password: <input>
+      Password: <input name="password">
       </div>
       <button>Submit</button>
     </form>
@@ -112,7 +114,7 @@ GET and POST are the two types of actions
   
   
 
-JAVASCRIPT CODE
+JAVASCRIPT CODE, result.html
   it can be in the body or in the head
   usually put in the body's end, so if there is any delay in running the code
   the website is rendered first
@@ -126,3 +128,28 @@ JAVASCRIPT CODE
     </script>
   </body>
 </html>
+
+
+
+
+
+when you grab data, you have to have a name attribute
+  name will be the label to Fares
+  password is the label to abc123
+
+
+document.write(window.location.search)
+  going to write window.location.search
+  window.location returns a location w/ info about current location in the document
+  location.search returns the query part of the url, which is the name=Fares&passwd=abc123
+  
+  
+  body
+<form name="form1">
+  <input type="button" value="Press" onClick="validator()"/>
+</form>
+
+<script type="text/javascript">
+
+function validator() {
+  if (document.getElementById("box1").checked)...
