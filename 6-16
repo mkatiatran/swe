@@ -1,0 +1,61 @@
+client server protocols
+  client is a computer that wants info
+  server is the computer with the information
+  client has to request information
+  server listens for requests form clients
+  for client and server to communicate, they must speak the same language
+  
+internet porcols
+  tcp, udp
+  ip
+  http
+ 
+ tcp
+  reliable two way byte stream
+  looks like a file
+  like placing a phone call
+  slower but more robust
+datagrams, udp
+  data transfered in unrealiable chunks
+  can be lost or arrive late
+  like using surface mail
+  faster, less robust
+
+ip addresses
+  like postal address
+  routing messages to all destinations on the internet
+  every device onthe internet has a unique ip address
+  when you go to a website, the machine/laptop first iddentifies the IP address of the website by looking it up in a DNS, domain name server
+  a lookup talbe that associates IP address with a coressponding web URL
+  when laptop gets IP address, it uses it to initiate ocmmunication with the website
+  multiple applicatinos using the internet can run on your achine
+  systems use ports to seignatue channels of communications on the ssame ip address
+  
+  you need the IP address and inside the same machine it has several ports, so you also need the port
+  
+ports range from 0-65536
+ports 0-10000 are for OS use
+port 80 most common port for webserver
+
+www is about communciation between web clients and servers
+clients tell servers by using an http verb, aka http method
+  get and post
+  http reqeuests and responses make up communication
+  
+client sends http request ot web
+web receives request
+server runs applicaiton to process request
+server returns repsonse
+client receives response
+
+most popular verbs
+GET POST
+PUT
+PATCH
+OPTIONS
+HEAD
+  when we used get it put the results in the url of the ebsite, which we didn't want because it contained private information
+  using post will solve this, odn't use get for sensitive dat
+  
+
+
