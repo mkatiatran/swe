@@ -1,0 +1,23 @@
+wait no more than 2 months to release a version of the software
+
+release often so customers can use product often to deliver most value in shortest time
+with greatest confidence and low stress
+
+3 phases: exploration, commitment, and steering
+releases are made up of iterations, where each iteration implements a story, made up of tasks
+
+in exploration, you write stories and define what the system needs to do
+experiment with how to build the system, try experiments that inform you of how costly the various stories and featuers will be
+
+
+release plan:
+write enough stories
+do exploration
+estimate story difficulty
+estimate speed of story implemetation
+choose stories for the first release from business value and difficulty
+
+iteration planning steps
+customer presents their stories
+team brainstorms the work per story
+programmers sign up for work and their estimates
