@@ -58,6 +58,59 @@ assert all([
 
 
 
-
 assert not any([])
 assert not any([B(), False, 0, 0.0,  "", [], (), set(), {}])
+
+
+
+
+
+how to create generator?
+def f():
+print("abc")
+return 5
+print("def")
+>>> v=f()
+abc
+>>> v
+5
+
+
+
+
+def f():
+print("abc")
+yield 5
+print("def")
+
+>>> v=f()
+>>>
+>>> w = next(v)          stimulatse function to go all the way down until it hits yield
+abc
+>>> w
+5
+when you put yield in a function it becomes a generator
+  creates a factory and returns a pointer to it
+  yield is like return but it returns a lazy, exhaustible generator
+
+
+
+iterators are not guaranteed to be indexable
+it might be infinite, such as count
+iterator that is empty, an if statement will give you true because it's an object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
