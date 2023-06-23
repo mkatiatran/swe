@@ -1,0 +1,30 @@
+lambda x: x+1
+def f(x):
+  return x+1
+
+
+switching [] to () turns an object into an iterator, where before it was iterable
+
+y=map(lambda v:v*5, x)
+  this means apply this transformation to every element in x
+the map function is iterator, iterable
+
+iterable has iter
+iterator has next
+indexable has getnext
+count has count
+
+
+
+x=[2,3,4]
+y=(v*5 for v in x)
+y is a generator
+x+=[5]      adds 5 to the end of x list, because y is a generator 
+list(y) = [10,15,20,25]
+list(y) = []
+x+=[5]
+list(y) = []
+
+iterator is lazy, exhaustible
+
+if y has square brackets, it is eager and not lazy and only sticks to [2,3,4]
