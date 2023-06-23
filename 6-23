@@ -28,3 +28,36 @@ list(y) = []
 iterator is lazy, exhaustible
 
 if y has square brackets, it is eager and not lazy and only sticks to [2,3,4]
+
+
+
+filter(lambda v:v%2,x)
+filters x to only odd values
+
+|= is the union function where you combine elements of two lists
+set
+dictionary comprehension
+
+
+
+
+
+
+what is considered true in python
+assert all([])
+assert all([
+    A(),
+    True,
+    2,
+    3.45,
+    "abc",
+    [2, 3, 4],
+    (2, 3, 4),
+    {2, 3, 4},
+    {2 : "abc", 3 : "def", 4 : "ghi"}])
+
+
+
+
+assert not any([])
+assert not any([B(), False, 0, 0.0,  "", [], (), set(), {}])
