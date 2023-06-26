@@ -15,16 +15,13 @@ indexable has getnext
 count has count
 
 x = [2, 3, 4]
-y = [v * 5 for v in x]            # list comprehension
-assert isinstance(y, list)
-assert not hasattr(y, "__next__")
-assert     hasattr(y, "__iter__")
-assert x == [2,   3,  4]
+y = [v * 5 for v in x]            # list comprehension, iterable, eager so does the action 
+x+=[5]
+assert x == [2,   3,  4, 5]
 assert y == [10, 15, 20]
 
 x=[2,3,4]
-y=(v*5 for v in x)
-y is a generator
+y=(v*5 for v in x)               # y is a generator
 x+=[5]      adds 5 to the end of x list, because y is a generator 
 list(y) = [10,15,20,25]
 list(y) = []
