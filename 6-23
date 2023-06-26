@@ -14,7 +14,13 @@ iterator has next
 indexable has getnext
 count has count
 
-
+x = [2, 3, 4]
+y = [v * 5 for v in x]            # list comprehension
+assert isinstance(y, list)
+assert not hasattr(y, "__next__")
+assert     hasattr(y, "__iter__")
+assert x == [2,   3,  4]
+assert y == [10, 15, 20]
 
 x=[2,3,4]
 y=(v*5 for v in x)
