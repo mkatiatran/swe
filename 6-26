@@ -1,0 +1,13 @@
+moniquetran@Moniques-MacBook-Air cs373 % python3
+Python 3.8.10 (v3.8.10:3d8993a744, May  3 2021, 08:55:58) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from Map import myMap
+>>> y = myMap(lambda x : x ** 2, [2,3,4])
+>>> next(y)
+4
+>>> next(y)
+9
+>>> next(y)
+16
+>>> 
