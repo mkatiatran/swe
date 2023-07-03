@@ -27,3 +27,24 @@ if x is a range object
 when you apply iter(x), it is not the same as the range object
 but when you apply iter to iter(x) it is the same object
 listing list(x) does not exhaust it
+
+when you loop over an iterable
+  you get an iterator, and everytime you ask for next
+
+
+i = [1,2,3]
+for j in i:
+  print(j)
+notice how it's looping over i, an iterable
+what happens under the hood?
+i-i = iter(i)
+while True 
+  try 
+    item = next(i-i)
+    print(item)
+  except StopIteration
+    break
+
+
+
+
