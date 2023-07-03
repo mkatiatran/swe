@@ -9,3 +9,21 @@ range(begin, end)
 
 iterator protocol
   iter and next functions MUST be implemented
+  def __init__(self, ...)  # you receive the beginning and end 
+  def __iter__(self)       
+  def __next__(self)       # next method is a stepwise function
+                           # you need to check if it's the end of the list, and raise an exception
+                           # provide current value using return, prepare the next 
+
+generator is actually an iterator under the hood,
+but iterator is not necessarily a generator
+
+x = range(4)
+it is not exhaustible
+type(x) = range class
+range is a generator-like object
+
+if x is a range object
+when you apply iter(x), it is not the same as the range object
+but when you apply iter to iter(x) it is the same object
+listing list(x) does not exhaust it
