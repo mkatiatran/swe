@@ -48,3 +48,10 @@ while True
 
 
 
+
+map and filter functions are generators
+function vs a predicate
+predicate only receives input and returns true or false
+function receives input and returns output,
+
+
