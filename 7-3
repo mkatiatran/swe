@@ -1,0 +1,8 @@
+characteristics of a generator
+  - lazy, exhaustible
+
+applying iter to an iterator/generator, it points to itself
+if you apply it to a regular thing, it turns the regular object into an iterator
+
+python's range is a generator-like object
+range(begin, end)
