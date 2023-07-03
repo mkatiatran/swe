@@ -6,3 +6,6 @@ if you apply it to a regular thing, it turns the regular object into an iterator
 
 python's range is a generator-like object
 range(begin, end)
+
+iterator protocol
+  iter and next functions MUST be implemented
