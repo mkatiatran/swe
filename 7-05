@@ -45,15 +45,46 @@ assert h2((1,)) == (1, 2)
 default value must come first in python, nondefault values after it as params
 
 rules:
-hierarchy dict unpacking:
-    position f(2)
-    iterunpacking
+which values get processed first in dict unpacking:
+    {position f(2), iterunpacking}
     name f(x=2)
     dict unpacking
 
-    f(2, *t) and f(*t, 2) = both work
+which values you must put first syntactically:
+    position before name
+    position before dict unpacking
+    iter unpacking before dict unpacking
 
+GENERAL
 iterable unpacking
     iterable unpacking    
     name f(x=2)
+
+
+
+
+
+def f (x, y, *z) :
+    return [x, y, z]
+
+assert f(2, 3)       == [2, 3, ()]
+assert f(2, 3, 4)    == [2, 3, (4,)]
+assert f(2, 3, 4, 5) == [2, 3, (4, 5)]
+
+
+
+
+z* parameter is PACKING
+empty *z = ()
+4 passed into param *z = (4,)
+4,5 passed into *z = (4,5)
+
+
+PACKING, putting back the parentheses
+t = (3, 4)
+assert f(2, 5,  t)  == [2, 5, ((3, 4),)]
+assert f(2, 5, *t)  == [2, 5, (3, 4)]
+
+t alone is just (3, 4),
+but *t is (3,4)
     
