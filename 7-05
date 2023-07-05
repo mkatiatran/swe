@@ -43,3 +43,17 @@ assert h2((1,)) == (1, 2)
 
 
 default value must come first in python, nondefault values after it as params
+
+rules:
+hierarchy dict unpacking:
+    position f(2)
+    iterunpacking
+    name f(x=2)
+    dict unpacking
+
+    f(2, *t) and f(*t, 2) = both work
+
+iterable unpacking
+    iterable unpacking    
+    name f(x=2)
+    
