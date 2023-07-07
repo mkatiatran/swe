@@ -46,7 +46,7 @@ default value must come first in python, nondefault values after it as params
 
 rules:
 which values get processed first in dict unpacking:
-    {position f(2), iterunpacking}
+    {position f(2), iterunpacking} by order of whatever comes first
     name f(x=2)
     dict unpacking
 
@@ -57,8 +57,7 @@ which values you must put first syntactically:
 
 GENERAL
 iterable unpacking
-    position
-    iterable unpacking    
+    {position, iterable unpacking} by order of whatever comes first
     name f(x=2)
 
 
