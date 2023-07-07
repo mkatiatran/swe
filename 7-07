@@ -1,0 +1,67 @@
+dockerfile is a template for rnning docker containers
+apt-get is like pip, kind of
+
+CMD bash
+  run bash with Windows Command Prompt
+
+
+docker build -t fareszf/python .
+  . means in this folder
+  fareszf is username on dockerhub
+  /python is the area with the image
+  Docker looks for a Dockerfile in the current directory 
+  and uses it as a blueprint to build an image. The resulting image 
+  will have the tag fareszf/python
+
+
+
+docker login
+
+docker images
+  fareszf/python tag imageid createdtime size
+ls
+  dockerfile
+
+a closure is an inner function with access to variables in local scope after outer function has
+finished executing
+
+
+
+
+
+decorators
+def df(of):
+  def wf():
+    print("wrapper")
+    return of()
+  return wf
+
+  call df -> calls wf -> calls of with Wrapper
+
+@df #equivalent to display = df(display)
+def display():
+  print ("Display")
+
+
+display()
+output:
+Wrapper
+Display
+
+
+
+
+
+
+
+def f(j)
+  return lambda i : i + j
+
+x=f(1)
+3
+
+x=f(2)(1)
+gives us 3
+
+
+    
