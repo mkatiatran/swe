@@ -30,7 +30,7 @@ splits the string into lines with the first instance of an a, excluding the firs
 b$ end of line
 
 
-re.split(".") means split around any character
+re.split(".") means split around any character except a newline
 r"\d" means any digit, r means it's a raw string and to avoid collision with escape sequence
 \D means any nondigit
 \w any alpha numeric
@@ -40,6 +40,7 @@ r"\d" means any digit, r means it's a raw string and to avoid collision with esc
 + means 1 or more
 * means 0 or more
 m = re.search("(a*)b([^a]*)(a*)b",s)
+0 or more a's, followed by 1 b, followed by anything but a, zero or more, followed by 0 or more a's, followed by a b
 
 Group 0: It represents the entire match or the entire string that matched the pattern.
 Group 1: It represents the first group of parentheses in the pattern.
@@ -48,11 +49,25 @@ Group 3: It represents the third group of parentheses in the pattern.
 
 
 
+re.sub = replace all instances of first param with second param in string
+
+relational algebra
+algebra
+- elements = relations/tables
+- operations = select, project, many joins
+
+integers under +, -, *, /
+integers are closed under +, -, *
+all of these are closed
+
+emulate the functionality of these operations in python
+
+movie relation
+title year genre director
+starwars 2002 scifi george lucas
 
 
 
-
-0 or more a's, followed by 1 b, followed by anything but a, zero or more, followed by 0 or more a's, followed by a b
 
 
 
