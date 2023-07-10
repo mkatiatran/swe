@@ -1,0 +1,46 @@
+def __call__
+
+this makes a class callable 
+"magic function"
+
+
+
+reduce(function, iterable, initializer)
+
+function: This is the function that will be applied cumulatively to the items of the iterable. It should take two arguments and return a single value.
+iterable: This is the sequence of elements to be processed.
+initializer: This is an optional argument that provides an initial value. If it is not specified, 
+reduce() uses the first element of the iterable as the initial value and starts the cumulative 
+computation from the second element.
+
+
+
+object.function from a class = method type, passes self implicitly as parameter
+class.function = function type, does not pass self implicity as parameter
+
+
+
+
+regex
+
+re.compile("^a", re.M)
+splits the string into lines with the first instance of an a, excluding the first character
+
+^a beginning of line
+b$ end of line
+
+
+re.split(".") means split around any character
+r"\d" means any digit, r means it's a raw string and to avoid collision with escape sequence
+\D means any nondigit
+\w any alpha numeric
+\W any nonalpha numeric
+
+
+
+* means 0 or more
+m = re.search("(a*)b([^a]*)(a*)b",s)
+0 or more a's, followed by 1 b, followed by anything but a, zero or more, followed by 0 or more a's, followed by a b
+
+
+
