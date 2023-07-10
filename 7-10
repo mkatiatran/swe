@@ -67,6 +67,13 @@ title year genre director
 starwars 2002 scifi george lucas
 
 
+select(table1, unary_predictate)
+  return a table2 that is a subset of table1
+  unarcy_predicate ex. movies where george lucas is the director
+
+predicate vs function
+true/false     range, e.g. integers
+
 
 
 
