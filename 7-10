@@ -36,10 +36,22 @@ r"\d" means any digit, r means it's a raw string and to avoid collision with esc
 \w any alpha numeric
 \W any nonalpha numeric
 
-
-
+? means 0 or 1 only
++ means 1 or more
 * means 0 or more
 m = re.search("(a*)b([^a]*)(a*)b",s)
+
+Group 0: It represents the entire match or the entire string that matched the pattern.
+Group 1: It represents the first group of parentheses in the pattern.
+Group 2: It represents the second group of parentheses in the pattern.
+Group 3: It represents the third group of parentheses in the pattern.
+
+
+
+
+
+
+
 0 or more a's, followed by 1 b, followed by anything but a, zero or more, followed by 0 or more a's, followed by a b
 
 
