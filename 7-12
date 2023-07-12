@@ -1,0 +1,10 @@
+relational algebra 
+  - select(table, unary predicate) -> whittles down rows
+  - project -> returns subset of columns but all rows
+  - lots of joins
+
+this is closed, meaning you always get back a table
+poor man's implementation
+
+project(r, "a", "b")
+  - you get table r, but remove a, b
