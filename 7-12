@@ -4,7 +4,11 @@ relational algebra
   - lots of joins
 
 this is closed, meaning you always get back a table
-poor man's implementation
+poor man's implementation bc you cannot represent what you really want
+  - no set of sets, set of dictionaries..
 
 project(r, "a", "b")
   - you get table r, but remove a, b
+
+crossjoin(r,s) -> a table r
+  - marries every row of r to every row of s
