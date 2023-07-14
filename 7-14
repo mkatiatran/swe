@@ -1,0 +1,10 @@
+json
+  specifies objects as name-value pairs
+  validated using json schema
+  almost identical to a python dictionary EXCEPT
+    in JSON, true and false vs. True and False in python
+    JSON uses null, not None
+
+a value can be a string, number/integer, true, false, null, object, or array
+
+
