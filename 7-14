@@ -8,3 +8,5 @@ json
 a value can be a string, number/integer, true, false, null, object, or array
 
 
+required, additionalproperties=false
+means you must have what's in the schema and you cannot add anything not defined
